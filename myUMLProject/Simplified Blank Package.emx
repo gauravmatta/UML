@@ -128,6 +128,7 @@
     <ownedAttribute xmi:id="_AKHQ0MizEe6yR-zJM3CeNA" name="attribute1" visibility="private"/>
     <ownedOperation xmi:id="_AaBVEMizEe6yR-zJM3CeNA" name="Operation1"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_uCFpkMi0Ee6-nsIERnFPvA" name="Interface1"/>
   <profileApplication xmi:id="_lQk4DMixEe6yR-zJM3CeNA">
     <eAnnotations xmi:id="_lQk4DcixEe6yR-zJM3CeNA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
