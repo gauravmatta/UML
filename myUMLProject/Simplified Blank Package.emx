@@ -3,7 +3,7 @@
 <!--Rational Software Architect Designer 9.7.0-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xmi:id="_lQkQ8MixEe6yR-zJM3CeNA" name="SimpleUMLModel">
+<uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:patternNotation="http://www.ibm.com/xtools/6.0.0/PatternNotation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xmi:id="_lQkQ8MixEe6yR-zJM3CeNA" name="SimpleUMLModel">
   <eAnnotations xmi:id="_lQkQ8cixEe6yR-zJM3CeNA" source="uml2.diagrams" references="_lQkQ8sixEe6yR-zJM3CeNA">
     <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_lQkQ8sixEe6yR-zJM3CeNA" type="Freeform" name="Main">
       <children xmi:type="umlnotation:UMLClassifierShape" xmi:id="_2Hac0MiyEe6yR-zJM3CeNA" element="_2HII8MiyEe6yR-zJM3CeNA" fontName="Noto Sans" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label" useClassifierShape="true">
@@ -31,6 +31,198 @@
         <children xmi:type="notation:SemanticListCompartment" xmi:id="_-zomEMiyEe6yR-zJM3CeNA" visible="false" type="SignalCompartment"/>
         <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_-zomEciyEe6yR-zJM3CeNA" visible="false" type="StructureCompartment"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-zliwciyEe6yR-zJM3CeNA" x="2487" y="1640"/>
+      </children>
+      <children xmi:type="patternNotation:PatternUINode" xmi:id="_Vh2w4MzZEe6-nsIERnFPvA" element="_VgISkMzZEe6-nsIERnFPvA">
+        <children xmi:type="notation:DecorationNode" xmi:id="_ViaKgMzZEe6-nsIERnFPvA" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_ViaKgczZEe6-nsIERnFPvA" width="1320" height="1320"/>
+        </children>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_ViaxkMzZEe6-nsIERnFPvA" type="Stereotype"/>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_VibYoMzZEe6-nsIERnFPvA" type="Name"/>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_Vib_sMzZEe6-nsIERnFPvA" type="Parent"/>
+        <children xmi:type="notation:SemanticListCompartment" xmi:id="_VipbEMzZEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+        <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_Vi4roMzZEe6-nsIERnFPvA" type="CollaborationCompartment"/>
+        <children xmi:type="notation:ListCompartment" xmi:id="_Vi5SsMzZEe6-nsIERnFPvA" type="Patterns Pattern Instances">
+          <children xmi:type="patternNotation:PatternUINode" xmi:id="_Vk4PsMzZEe6-nsIERnFPvA" type="Patterns Pattern Instance Name">
+            <children xmi:type="notation:ListCompartment" xmi:id="_Vk42wMzZEe6-nsIERnFPvA" type="Patterns Template Argument List">
+              <children xmi:type="patternNotation:PatternUINode" xmi:id="_VlnPgMzZEe6-nsIERnFPvA" type="Patterns Parameter And Value List">
+                <children xmi:type="patternNotation:PatternUINode" xmi:id="_Vln2kMzZEe6-nsIERnFPvA" type="Patterns Template ArgumentCompartment">
+                  <children xmi:type="patternNotation:PatternUINode" xmi:id="_VlodoMzZEe6-nsIERnFPvA" type="Patterns Template Argument">
+                    <patternInstanceId xmi:id="_VlodoczZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                    <parameterId xmi:id="_VlodoszZEe6-nsIERnFPvA" name="AbstractFactory" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$AbstractFactoryParameter"/>
+                  </children>
+                  <styles xmi:type="notation:DrawerStyle" xmi:id="_Vln2kczZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:TitleStyle" xmi:id="_Vln2kszZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_Vln2k8zZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_Vln2lMzZEe6-nsIERnFPvA"/>
+                  <patternInstanceId xmi:id="_Vln2lczZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                  <parameterId xmi:id="_Vln2lszZEe6-nsIERnFPvA" name="AbstractFactory" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$AbstractFactoryParameter"/>
+                </children>
+                <children xmi:type="patternNotation:PatternUINode" xmi:id="_VlpEsMzZEe6-nsIERnFPvA" type="Patterns Template Argument ValueCompartment">
+                  <styles xmi:type="notation:DrawerStyle" xmi:id="_VlpEsczZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:TitleStyle" xmi:id="_VlpEsszZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_VlpEs8zZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_VlpEtMzZEe6-nsIERnFPvA"/>
+                  <patternInstanceId xmi:id="_VlpEtczZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                  <parameterId xmi:id="_VlpEtszZEe6-nsIERnFPvA" name="AbstractFactory" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$AbstractFactoryParameter"/>
+                </children>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_VlnPgczZEe6-nsIERnFPvA"/>
+                <styles xmi:type="notation:TitleStyle" xmi:id="_VlnPgszZEe6-nsIERnFPvA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_VlnPg8zZEe6-nsIERnFPvA"/>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_VlnPhMzZEe6-nsIERnFPvA"/>
+                <patternInstanceId xmi:id="_VlnPhczZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                <parameterId xmi:id="_VlnPhszZEe6-nsIERnFPvA" name="AbstractFactory" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$AbstractFactoryParameter"/>
+              </children>
+              <children xmi:type="patternNotation:PatternUINode" xmi:id="_VlqS0MzZEe6-nsIERnFPvA" type="Patterns Parameter And Value List">
+                <children xmi:type="patternNotation:PatternUINode" xmi:id="_Vlq54MzZEe6-nsIERnFPvA" type="Patterns Template ArgumentCompartment">
+                  <children xmi:type="patternNotation:PatternUINode" xmi:id="_Vlrg8MzZEe6-nsIERnFPvA" type="Patterns Template Argument">
+                    <patternInstanceId xmi:id="_Vlrg8czZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                    <parameterId xmi:id="_Vlrg8szZEe6-nsIERnFPvA" name="ConcreteFactory" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$ConcreteFactoryParameter"/>
+                  </children>
+                  <styles xmi:type="notation:DrawerStyle" xmi:id="_Vlq54czZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:TitleStyle" xmi:id="_Vlq54szZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_Vlq548zZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_Vlq55MzZEe6-nsIERnFPvA"/>
+                  <patternInstanceId xmi:id="_Vlq55czZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                  <parameterId xmi:id="_Vlq55szZEe6-nsIERnFPvA" name="ConcreteFactory" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$ConcreteFactoryParameter"/>
+                </children>
+                <children xmi:type="patternNotation:PatternUINode" xmi:id="_Vlrg88zZEe6-nsIERnFPvA" type="Patterns Template Argument ValueCompartment">
+                  <styles xmi:type="notation:DrawerStyle" xmi:id="_Vlrg9MzZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:TitleStyle" xmi:id="_Vlrg9czZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_Vlrg9szZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_Vlrg98zZEe6-nsIERnFPvA"/>
+                  <patternInstanceId xmi:id="_Vlrg-MzZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                  <parameterId xmi:id="_Vlrg-czZEe6-nsIERnFPvA" name="ConcreteFactory" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$ConcreteFactoryParameter"/>
+                </children>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_VlqS0czZEe6-nsIERnFPvA"/>
+                <styles xmi:type="notation:TitleStyle" xmi:id="_VlqS0szZEe6-nsIERnFPvA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_VlqS08zZEe6-nsIERnFPvA"/>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_VlqS1MzZEe6-nsIERnFPvA"/>
+                <patternInstanceId xmi:id="_VlqS1czZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                <parameterId xmi:id="_VlqS1szZEe6-nsIERnFPvA" name="ConcreteFactory" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$ConcreteFactoryParameter"/>
+              </children>
+              <children xmi:type="patternNotation:PatternUINode" xmi:id="_VlsvEMzZEe6-nsIERnFPvA" type="Patterns Parameter And Value List">
+                <children xmi:type="patternNotation:PatternUINode" xmi:id="_VltWIMzZEe6-nsIERnFPvA" type="Patterns Template ArgumentCompartment">
+                  <children xmi:type="patternNotation:PatternUINode" xmi:id="_Vlt9MMzZEe6-nsIERnFPvA" type="Patterns Template Argument">
+                    <patternInstanceId xmi:id="_Vlt9MczZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                    <parameterId xmi:id="_Vlt9MszZEe6-nsIERnFPvA" name="AbstractProduct" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$AbstractProductParameter"/>
+                  </children>
+                  <styles xmi:type="notation:DrawerStyle" xmi:id="_VltWIczZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:TitleStyle" xmi:id="_VltWIszZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_VltWI8zZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_VltWJMzZEe6-nsIERnFPvA"/>
+                  <patternInstanceId xmi:id="_VltWJczZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                  <parameterId xmi:id="_VltWJszZEe6-nsIERnFPvA" name="AbstractProduct" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$AbstractProductParameter"/>
+                </children>
+                <children xmi:type="patternNotation:PatternUINode" xmi:id="_VlukQMzZEe6-nsIERnFPvA" type="Patterns Template Argument ValueCompartment">
+                  <styles xmi:type="notation:DrawerStyle" xmi:id="_VlukQczZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:TitleStyle" xmi:id="_VlukQszZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_VlukQ8zZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_VlukRMzZEe6-nsIERnFPvA"/>
+                  <patternInstanceId xmi:id="_VlukRczZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                  <parameterId xmi:id="_VlukRszZEe6-nsIERnFPvA" name="AbstractProduct" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$AbstractProductParameter"/>
+                </children>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_VlsvEczZEe6-nsIERnFPvA"/>
+                <styles xmi:type="notation:TitleStyle" xmi:id="_VlsvEszZEe6-nsIERnFPvA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_VlsvE8zZEe6-nsIERnFPvA"/>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_VlsvFMzZEe6-nsIERnFPvA"/>
+                <patternInstanceId xmi:id="_VlsvFczZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                <parameterId xmi:id="_VlsvFszZEe6-nsIERnFPvA" name="AbstractProduct" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$AbstractProductParameter"/>
+              </children>
+              <children xmi:type="patternNotation:PatternUINode" xmi:id="_VlvLUMzZEe6-nsIERnFPvA" type="Patterns Parameter And Value List">
+                <children xmi:type="patternNotation:PatternUINode" xmi:id="_VlvyYMzZEe6-nsIERnFPvA" type="Patterns Template ArgumentCompartment">
+                  <children xmi:type="patternNotation:PatternUINode" xmi:id="_VlwZcMzZEe6-nsIERnFPvA" type="Patterns Template Argument">
+                    <patternInstanceId xmi:id="_VlwZcczZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                    <parameterId xmi:id="_VlwZcszZEe6-nsIERnFPvA" name="ConcreteProduct" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$ConcreteProductParameter"/>
+                  </children>
+                  <styles xmi:type="notation:DrawerStyle" xmi:id="_VlvyYczZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:TitleStyle" xmi:id="_VlvyYszZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_VlvyY8zZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_VlvyZMzZEe6-nsIERnFPvA"/>
+                  <patternInstanceId xmi:id="_VlvyZczZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                  <parameterId xmi:id="_VlvyZszZEe6-nsIERnFPvA" name="ConcreteProduct" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$ConcreteProductParameter"/>
+                </children>
+                <children xmi:type="patternNotation:PatternUINode" xmi:id="_VlxAgMzZEe6-nsIERnFPvA" type="Patterns Template Argument ValueCompartment">
+                  <styles xmi:type="notation:DrawerStyle" xmi:id="_VlxAgczZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:TitleStyle" xmi:id="_VlxAgszZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_VlxAg8zZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_VlxAhMzZEe6-nsIERnFPvA"/>
+                  <patternInstanceId xmi:id="_VlxAhczZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                  <parameterId xmi:id="_VlxAhszZEe6-nsIERnFPvA" name="ConcreteProduct" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$ConcreteProductParameter"/>
+                </children>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_VlvLUczZEe6-nsIERnFPvA"/>
+                <styles xmi:type="notation:TitleStyle" xmi:id="_VlvLUszZEe6-nsIERnFPvA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_VlvLU8zZEe6-nsIERnFPvA"/>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_VlvLVMzZEe6-nsIERnFPvA"/>
+                <patternInstanceId xmi:id="_VlvLVczZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                <parameterId xmi:id="_VlvLVszZEe6-nsIERnFPvA" name="ConcreteProduct" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$ConcreteProductParameter"/>
+              </children>
+              <children xmi:type="patternNotation:PatternUINode" xmi:id="_VlxnkMzZEe6-nsIERnFPvA" type="Patterns Parameter And Value List">
+                <children xmi:type="patternNotation:PatternUINode" xmi:id="_VlyOoMzZEe6-nsIERnFPvA" type="Patterns Template ArgumentCompartment">
+                  <children xmi:type="patternNotation:PatternUINode" xmi:id="_Vly1sMzZEe6-nsIERnFPvA" type="Patterns Template Argument">
+                    <patternInstanceId xmi:id="_Vly1sczZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                    <parameterId xmi:id="_Vly1sszZEe6-nsIERnFPvA" name="ProductMapping" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$AbstractProductImplementationParameter"/>
+                  </children>
+                  <styles xmi:type="notation:DrawerStyle" xmi:id="_VlyOoczZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:TitleStyle" xmi:id="_VlyOoszZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_VlyOo8zZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_VlyOpMzZEe6-nsIERnFPvA"/>
+                  <patternInstanceId xmi:id="_VlyOpczZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                  <parameterId xmi:id="_VlyOpszZEe6-nsIERnFPvA" name="ProductMapping" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$AbstractProductImplementationParameter"/>
+                </children>
+                <children xmi:type="patternNotation:PatternUINode" xmi:id="_Vl9NwMzZEe6-nsIERnFPvA" type="Patterns Template Argument ValueCompartment">
+                  <styles xmi:type="notation:DrawerStyle" xmi:id="_Vl9NwczZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:TitleStyle" xmi:id="_Vl9NwszZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_Vl9Nw8zZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_Vl9NxMzZEe6-nsIERnFPvA"/>
+                  <patternInstanceId xmi:id="_Vl9NxczZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                  <parameterId xmi:id="_Vl9NxszZEe6-nsIERnFPvA" name="ProductMapping" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$AbstractProductImplementationParameter"/>
+                </children>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_VlxnkczZEe6-nsIERnFPvA"/>
+                <styles xmi:type="notation:TitleStyle" xmi:id="_VlxnkszZEe6-nsIERnFPvA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_Vlxnk8zZEe6-nsIERnFPvA"/>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_VlxnlMzZEe6-nsIERnFPvA"/>
+                <patternInstanceId xmi:id="_VlxnlczZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                <parameterId xmi:id="_VlxnlszZEe6-nsIERnFPvA" name="ProductMapping" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$AbstractProductImplementationParameter"/>
+              </children>
+              <children xmi:type="patternNotation:PatternUINode" xmi:id="_Vl-b4MzZEe6-nsIERnFPvA" type="Patterns Parameter And Value List">
+                <children xmi:type="patternNotation:PatternUINode" xmi:id="_Vl_C8MzZEe6-nsIERnFPvA" type="Patterns Template ArgumentCompartment">
+                  <children xmi:type="patternNotation:PatternUINode" xmi:id="_Vl_qAMzZEe6-nsIERnFPvA" type="Patterns Template Argument">
+                    <patternInstanceId xmi:id="_Vl_qAczZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                    <parameterId xmi:id="_Vl_qAszZEe6-nsIERnFPvA" name="FactoryMapping" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$ProductCreationUsageParameter"/>
+                  </children>
+                  <styles xmi:type="notation:DrawerStyle" xmi:id="_Vl_C8czZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:TitleStyle" xmi:id="_Vl_C8szZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_Vl_C88zZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_Vl_C9MzZEe6-nsIERnFPvA"/>
+                  <patternInstanceId xmi:id="_Vl_C9czZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                  <parameterId xmi:id="_Vl_C9szZEe6-nsIERnFPvA" name="FactoryMapping" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$ProductCreationUsageParameter"/>
+                </children>
+                <children xmi:type="patternNotation:PatternUINode" xmi:id="_Vl_qA8zZEe6-nsIERnFPvA" type="Patterns Template Argument ValueCompartment">
+                  <styles xmi:type="notation:DrawerStyle" xmi:id="_Vl_qBMzZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:TitleStyle" xmi:id="_Vl_qBczZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_Vl_qBszZEe6-nsIERnFPvA"/>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_Vl_qB8zZEe6-nsIERnFPvA"/>
+                  <patternInstanceId xmi:id="_Vl_qCMzZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                  <parameterId xmi:id="_Vl_qCczZEe6-nsIERnFPvA" name="FactoryMapping" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$ProductCreationUsageParameter"/>
+                </children>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_Vl-b4czZEe6-nsIERnFPvA"/>
+                <styles xmi:type="notation:TitleStyle" xmi:id="_Vl-b4szZEe6-nsIERnFPvA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_Vl-b48zZEe6-nsIERnFPvA"/>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_Vl-b5MzZEe6-nsIERnFPvA"/>
+                <patternInstanceId xmi:id="_Vl-b5czZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@550ec51a"/>
+                <parameterId xmi:id="_Vl-b5szZEe6-nsIERnFPvA" name="FactoryMapping" code="com.ibm.xtools.patterns.content.gof.creational.abstractfactory.AbstractFactoryPattern$ProductCreationUsageParameter"/>
+              </children>
+            </children>
+            <styles xmi:type="notation:DrawerStyle" xmi:id="_Vk4PsczZEe6-nsIERnFPvA"/>
+            <patternInstanceId xmi:id="_Vk4PsszZEe6-nsIERnFPvA" name="Abstract Factory" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@cfa93859"/>
+          </children>
+        </children>
+        <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_Vi5SsczZEe6-nsIERnFPvA" visible="false" type="Patterns Overview"/>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_Vh2w4czZEe6-nsIERnFPvA" fontName="Noto Sans" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1"/>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Vh2w4szZEe6-nsIERnFPvA" showStereotype="Label"/>
+        <styles xmi:type="patternNotation:PatternParameterStyle" xmi:id="_Vh2w48zZEe6-nsIERnFPvA"/>
+        <styles xmi:type="patternNotation:PatternShapeStyle" xmi:id="_Vh2w5MzZEe6-nsIERnFPvA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Vh2w5czZEe6-nsIERnFPvA" x="4224" y="4092"/>
       </children>
     </contents>
   </eAnnotations>
@@ -129,6 +321,23 @@
     <ownedOperation xmi:id="_AaBVEMizEe6yR-zJM3CeNA" name="Operation1"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_uCFpkMi0Ee6-nsIERnFPvA" name="Interface1"/>
+  <packagedElement xmi:type="uml:Collaboration" xmi:id="_VgISkMzZEe6-nsIERnFPvA" name="My Factory">
+    <eAnnotations xmi:id="_VgJgsMzZEe6-nsIERnFPvA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_1ZBWwMzZEe6-nsIERnFPvA" key="Pattern Instance"/>
+    </eAnnotations>
+    <templateBinding xmi:id="_VgQ1cMzZEe6-nsIERnFPvA">
+      <signature xmi:type="uml:RedefinableTemplateSignature" href="pathmap://DESIGN_PATTERNS_LIBRARY/AbstractFactory/AbstractFactory.emx#_-GWhFslWEdiNyYs0JBYfUQ?AbstractFactory/Abstract%20Factory/%3CRedefinableTemplateSignature%3E?"/>
+      <parameterSubstitution xmi:id="_2XlQwMzZEe6-nsIERnFPvA" actual="_2Xi0gMzZEe6-nsIERnFPvA">
+        <formal xmi:type="uml:ClassifierTemplateParameter" href="pathmap://DESIGN_PATTERNS_LIBRARY/AbstractFactory/AbstractFactory.emx#_-GgSFMlWEdiNyYs0JBYfUQ?AbstractFactory/Abstract%20Factory/%3CRedefinableTemplateSignature%3E/%3CClassifierTemplateParameter%3E?"/>
+      </parameterSubstitution>
+    </templateBinding>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_2Xi0gMzZEe6-nsIERnFPvA" name="AbstractFactory" clientDependency="_2XnF8MzZEe6-nsIERnFPvA" isAbstract="true">
+    <eAnnotations xmi:id="_2YVesMzZEe6-nsIERnFPvA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_2YVesczZEe6-nsIERnFPvA" key="AbstractFactory"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Abstraction" xmi:id="_2XnF8MzZEe6-nsIERnFPvA" supplier="_VgISkMzZEe6-nsIERnFPvA" client="_2Xi0gMzZEe6-nsIERnFPvA"/>
   <profileApplication xmi:id="_lQk4DMixEe6yR-zJM3CeNA">
     <eAnnotations xmi:id="_lQk4DcixEe6yR-zJM3CeNA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
