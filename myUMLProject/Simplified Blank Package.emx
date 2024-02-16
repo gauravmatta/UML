@@ -325,6 +325,9 @@
     <eAnnotations xmi:id="_VgJgsMzZEe6-nsIERnFPvA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <details xmi:id="_1ZBWwMzZEe6-nsIERnFPvA" key="Pattern Instance"/>
     </eAnnotations>
+    <ownedRule xmi:id="_1Ta9sMzcEe6-nsIERnFPvA" name="test" constrainedElement="_VgISkMzZEe6-nsIERnFPvA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_1Tmj4MzcEe6-nsIERnFPvA"/>
+    </ownedRule>
     <templateBinding xmi:id="_VgQ1cMzZEe6-nsIERnFPvA">
       <signature xmi:type="uml:RedefinableTemplateSignature" href="pathmap://DESIGN_PATTERNS_LIBRARY/AbstractFactory/AbstractFactory.emx#_-GWhFslWEdiNyYs0JBYfUQ?AbstractFactory/Abstract%20Factory/%3CRedefinableTemplateSignature%3E?"/>
       <parameterSubstitution xmi:id="_2XlQwMzZEe6-nsIERnFPvA" actual="_2Xi0gMzZEe6-nsIERnFPvA">
