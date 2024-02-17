@@ -7,7 +7,7 @@
       <ContainerTag name="org.eclipse.jet.workspaceTags:file" libraryId="org.eclipse.jet.workspaceTags" content="">
         <attributes name="derived" value="" required="false" type="boolean"/>
         <attributes name="encoding" value="" required="false" type="string"/>
-        <attributes name="path" value="{$mailing/@firstName}{$mailing/@firstName}.html" required="true" type="string"/>
+        <attributes name="path" value="{$org.eclipse.jet.resource.project.name}/{$root/@mailingFolder}/{$mailing/@firstName}" required="true" type="string"/>
         <attributes name="replace" value="true" required="false" type="boolean"/>
         <attributes name="template" value="templates/mailing/letter.html.jet" required="true" type="string"/>
       </ContainerTag>

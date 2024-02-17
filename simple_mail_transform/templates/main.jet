@@ -74,7 +74,7 @@
   <%-- Begin: custom actions for $mailing (1) --%>
   <%-- End: custom actions for $mailing (1) --%>
 
-  <ws:file path="{$org.eclipse.jet.resource.project.name}/letter.html" replace="true" template="templates/mailing/letter.html.jet"/>
+  <ws:file path="{$org.eclipse.jet.resource.project.name}/{$root/@mailingFolder}/{$mailing/@firstName}" replace="true" template="templates/mailing/letter.html.jet"/>
 
   <%-- Begin: custom actions for $mailing (2) --%>
   <%-- End: custom actions for $mailing (2) --%>

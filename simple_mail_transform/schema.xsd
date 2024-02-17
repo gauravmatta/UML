@@ -4,8 +4,11 @@
 		<xsd:sequence>
 			<xsd:element name="mailing" type="Mailing" minOccurs="0" maxOccurs="unbounded"></xsd:element>
 		</xsd:sequence>
+		<xsd:attribute name="mailingFolder" type="xsd:string" ></xsd:attribute>
 	</xsd:complexType>
 	<xsd:complexType name="Mailing">
+		<xsd:attribute name="email" type="xsd:string" ></xsd:attribute>
+		<xsd:attribute name="firstName" type="xsd:string" ></xsd:attribute>
 	</xsd:complexType>
 
 	<xsd:element name="root" type="Root"></xsd:element>
