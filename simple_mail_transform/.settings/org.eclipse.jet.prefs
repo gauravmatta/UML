@@ -1,0 +1,6 @@
+#Sat Feb 17 12:55:35 IST 2024
+eclipse.preferences.version=1
+org.eclipse.jet.compiledTemplatePackage=simple.mail.transform.compiled
+org.eclipse.jet.compiledTemplateSrcDir=jet2java
+org.eclipse.jet.projectPrefs=true
+org.eclipse.jet.useJava5=true

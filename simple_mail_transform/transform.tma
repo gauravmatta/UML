@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<com.ibm.xtools.jet.ui.internal:TransformModelRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.xtools.jet.ui.internal="com.ibm.xtools.jet.ui.internal.tma" xmlns:com.ibm.xtools.jet.ui.internal.tma="com.ibm.xtools.jet.ui.internal.tma.actions">
+  <ActionsRoot>
+    <actions xsi:type="com.ibm.xtools.jet.ui.internal.tma:ContainerTagAction" name="letter.html">
+      <schemaElement href="input.ecore#//Mailing"/>
+      <ContainerTag name="org.eclipse.jet.workspaceTags:file" libraryId="org.eclipse.jet.workspaceTags" content="">
+        <attributes name="derived" value="" required="false" type="boolean"/>
+        <attributes name="encoding" value="" required="false" type="string"/>
+        <attributes name="path" value="{$mailing/@email}" required="true" type="string"/>
+        <attributes name="replace" value="true" required="false" type="boolean"/>
+        <attributes name="template" value="templates/mailing/letter.html.jet" required="true" type="string"/>
+      </ContainerTag>
+    </actions>
+  </ActionsRoot>
+  <ExemplarsRoot/>
+  <rootSchemaElementType href="input.ecore#//Root"/>
+  <ReplacePairRoot>
+    <replacePairs findText="{$org.eclipse.jet.resource.project.name}/letter.html">
+      <replaceObject href="input.ecore#//Mailing/email"/>
+    </replacePairs>
+  </ReplacePairRoot>
+  <SchemaTypeVarRoot>
+    <SchemaTypeVars var="root">
+      <type href="input.ecore#//Root"/>
+    </SchemaTypeVars>
+    <SchemaTypeVars var="mailing">
+      <type href="input.ecore#//Mailing"/>
+    </SchemaTypeVars>
+  </SchemaTypeVarRoot>
+</com.ibm.xtools.jet.ui.internal:TransformModelRoot>
