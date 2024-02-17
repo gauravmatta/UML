@@ -179,6 +179,16 @@
     <replacePairs findText="fds" replaceObject="//@ActionsRoot/@actions.4"/>
     <replacePairs findText="Joe Doe"/>
     <replacePairs findText="fdsfds"/>
+    <replacePairs findText="Email">
+      <replaceObject href="input.ecore#//Mailing/email"/>
+    </replacePairs>
+    <replacePairs findText="Name">
+      <replaceObject href="input.ecore#//Mailing/firstName"/>
+    </replacePairs>
+    <replacePairs findText="Message" replaceObject="//@ActionsRoot/@actions.3"/>
+    <replacePairs findText="Gaurav">
+      <replaceObject href="input.ecore#//Mailing/firstName"/>
+    </replacePairs>
   </ReplacePairRoot>
   <SchemaTypeVarRoot>
     <SchemaTypeVars var="root">
