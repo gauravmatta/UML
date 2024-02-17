@@ -16,7 +16,8 @@
       <schemaElement href="input.ecore#//Campaign"/>
       <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:ContainerTagAction" name="letters">
         <schemaElement href="input.ecore#//Campaign"/>
-        <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:ContainerTagAction" name="letter.html">
+        <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:ContainerTagAction" name="Create File: letter.html">
+          <exemplarReferences name="letter.html" Exemplar="//@ExemplarsRoot/@exemplars.0/@children.8"/>
           <schemaElement href="input.ecore#//Campaign"/>
           <ContainerTag name="org.eclipse.jet.workspaceTags:file" libraryId="org.eclipse.jet.workspaceTags" content="">
             <attributes name="derived" value="" required="false" type="boolean"/>
@@ -36,7 +37,66 @@
       </ContainerTag>
     </actions>
   </ActionsRoot>
-  <ExemplarsRoot/>
+  <ExemplarsRoot>
+    <exemplars xsi:type="com.ibm.xtools.jet.ui.internal.tma:ProjectExemplar" path="/simple.mail.transform">
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/.classpath"/>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/.project"/>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FolderExemplar" path="/simple.mail.transform/.settings">
+        <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/.settings/com.ibm.xtools.jet.ui.prefs"/>
+        <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/.settings/org.eclipse.core.resources.prefs"/>
+        <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/.settings/org.eclipse.jet.prefs"/>
+      </children>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FolderExemplar" path="/simple.mail.transform/META-INF">
+        <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/META-INF/MANIFEST.MF"/>
+      </children>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FolderExemplar" path="/simple.mail.transform/bin">
+        <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/bin/.gitignore"/>
+        <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FolderExemplar" path="/simple.mail.transform/bin/simple">
+          <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FolderExemplar" path="/simple.mail.transform/bin/simple/mail">
+            <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FolderExemplar" path="/simple.mail.transform/bin/simple/mail/transform">
+              <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FolderExemplar" path="/simple.mail.transform/bin/simple/mail/transform/compiled">
+                <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/bin/simple/mail/transform/compiled/.gitignore"/>
+                <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/bin/simple/mail/transform/compiled/_jet_dump.class"/>
+                <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/bin/simple/mail/transform/compiled/_jet_letterhtml.class"/>
+                <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/bin/simple/mail/transform/compiled/_jet_main.class"/>
+                <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/bin/simple/mail/transform/compiled/_jet_transformation.class"/>
+              </children>
+            </children>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/build.properties"/>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/input.ecore"/>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FolderExemplar" path="/simple.mail.transform/jet2java">
+        <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FolderExemplar" path="/simple.mail.transform/jet2java/simple">
+          <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FolderExemplar" path="/simple.mail.transform/jet2java/simple/mail">
+            <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FolderExemplar" path="/simple.mail.transform/jet2java/simple/mail/transform">
+              <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FolderExemplar" path="/simple.mail.transform/jet2java/simple/mail/transform/compiled">
+                <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/jet2java/simple/mail/transform/compiled/.gitignore"/>
+                <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/jet2java/simple/mail/transform/compiled/_jet_dump.java"/>
+                <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/jet2java/simple/mail/transform/compiled/_jet_letterhtml.java"/>
+                <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/jet2java/simple/mail/transform/compiled/_jet_main.java"/>
+                <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/jet2java/simple/mail/transform/compiled/_jet_transformation.java"/>
+              </children>
+            </children>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" ExemplarReference="//@ActionsRoot/@actions.1/@children.0/@children.0/@exemplarReferences.0" path="/simple.mail.transform/letter.html"/>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/plugin.xml"/>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/sample.xml"/>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/schema.xsd"/>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FolderExemplar" path="/simple.mail.transform/templates">
+        <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/templates/dump.jet"/>
+        <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FolderExemplar" path="/simple.mail.transform/templates/mailing">
+          <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/templates/mailing/letter.html.jet"/>
+        </children>
+        <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/templates/main.jet"/>
+      </children>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/test.xml"/>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/transform.tma"/>
+    </exemplars>
+  </ExemplarsRoot>
   <rootSchemaElementType href="input.ecore#//Root"/>
   <ReplacePairRoot>
     <replacePairs findText="{$org.eclipse.jet.resource.project.name}/letter.html">
