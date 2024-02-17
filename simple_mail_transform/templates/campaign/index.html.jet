@@ -20,20 +20,21 @@
 	</head>
 	<div class="container">
 		<table border="1">
+		<thead>	
+			<td>
+				<th>Email</th>
+				<th>Name</th>
+				<th>Message</th>
+			</td>
+		</thead>
 			<tbody>
-				<tr>
-					<td>Email</td>
-					<td>Name</td>
-					<td>Message</td>
-				</tr>
 			<c:iterate select="$campaign/mailing" var="mailing">
-				<tr>
-					<td><c:get select="$mailing/@email" /></td>
-					<td><c:get select="$mailing/@firstName" /></td>
-					<td><c:get select="$campaign/@lettersDir" /></td>
-				</tr>
+			<tr>
+				<td><c:get select="$mailing/@email" /></td>
+				<td><c:get select="$mailing/@firstName" /></td>
+				<td><c:get select="$campaign/@lettersDir" /></td>
+			</tr>
 			</c:iterate>
-
 			</tbody>
 		<table>
 	</div>
