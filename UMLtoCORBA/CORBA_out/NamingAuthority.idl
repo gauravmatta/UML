@@ -1,0 +1,20 @@
+// File: NamingAuthority.idl
+
+#ifndef _NAMINGAUTHORITY_IDL_
+#define _NAMINGAUTHORITY_IDL_
+struct AuthorityId {
+    string naming_entity;
+    any authority;
+};
+struct QualifiedName {
+    AuthorityId athority_id;
+    string localname;
+};
+interface translation_library {
+    void str_to_authority();
+    void authority_to_str();
+    void qualified_name_to_str(in string qualified_name );
+    void str_to_qualified_name(in any qualified_name_str );
+};
+
+#endif /* #ifndef _NAMINGAUTHORITY_IDL_ */

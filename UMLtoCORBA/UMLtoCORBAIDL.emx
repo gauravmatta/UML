@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<!--Rational Software Architect Designer 9.7.0-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CORBATransformation="http:///schemas/CORBATransformation/_H2iqYA4DEeKRU4tYn-mkMQ/15" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/CORBATransformation/_H2iqYA4DEeKRU4tYn-mkMQ/15 pathmap://CORBA_PROFILE/CorbaProfile.epx#_H2kfkA4DEeKRU4tYn-mkMQ?CORBA%20Transformation/CORBATransformation?">
+  <uml:Model xmi:id="_MkoE0M1VEe6-nsIERnFPvA" name="UMLtoCORBAIDL">
+    <eAnnotations xmi:id="_MkoE0c1VEe6-nsIERnFPvA" source="uml2.diagrams" references="_MkoE081VEe6-nsIERnFPvA">
+      <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_MkoE0s1VEe6-nsIERnFPvA" type="Class" name="Main"/>
+      <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_MkoE081VEe6-nsIERnFPvA" type="Freeform" name="Instructions" description="How to use the CORBA model template.">
+        <children xmi:type="notation:Shape" xmi:id="_MkoE1M1VEe6-nsIERnFPvA" type="rectangle" fontHeight="16" description="CORBA Modeling Template" fillColor="13956346" lineColor="12632258">
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoE1c1VEe6-nsIERnFPvA" type="DiagramName"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoE1s1VEe6-nsIERnFPvA" type="Description"/>
+          <styles xmi:type="notation:TextStyle" xmi:id="_MkoE181VEe6-nsIERnFPvA"/>
+          <styles xmi:type="notation:LineTypeStyle" xmi:id="_MkoE2M1VEe6-nsIERnFPvA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkoE2c1VEe6-nsIERnFPvA" x="899" y="396" width="14287" height="1561"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_MkoE2s1VEe6-nsIERnFPvA" type="Note" fontHeight="8" description="This template model is provided for helping you to create a UML model of CORBA IDL.&#xD;&#xA;&#xD;&#xA;GOOD PRACTICES:&#xD;&#xA;&#xD;&#xA;1) A UML component corresponds to an IDL file. Hence all the model elements belonging to a single idl file should be grouped under one UML component.&#xD;&#xA;&#xD;&#xA;2) Group model elements belonging to different IDL files should be placed under separate UML components.&#xD;&#xA;&#xD;&#xA;3) If your model consists of non-CORBA related UML elements you should try to group all the CORBA components under a single or minimum number of UML packages. This will eliminate the need for manually selecting all the CORBA related UML components before invoking a UML to CORBA transformation. If the CORBA components are dispersed through out the UML model then one is forced to select them manually each time because running the transformation on the whole model will generate IDL files for non-CORBA UML components too by default.&#xD;&#xA;&#xD;&#xA;HOW DOES THIS TEMPLATE HELP YOU?&#xD;&#xA;&#xD;&#xA;1) This template consists of a default package named &quot;CORBA Elements&quot; under which a UML component named &quot;{Default Component}&quot; and a UML interface named &quot;{Default Interface}&quot; are already created for you. It is recommended that you rename the default UML elements according to your needs.&#xD;&#xA;&#xD;&#xA;2) The CORBA type library is already imported in the model.  This allows you to set the CORBA basic types during element type selection.&#xD;&#xA;&#xD;&#xA;3) A collection of shortcuts to the primitive types is also provided for ease of use in the class diagram &quot;Shortcuts to CORBA primitive types&quot;.You can use these shortcuts by copying and pasting them into the destination diagram.&#xD;&#xA;&#xD;&#xA;WHEN YOU NO LONGER NEED THESE INSTRUCTIONS:&#xD;&#xA;1. Delete this diagram (&quot;Instructions&quot;) from the model&#xD;&#xA;" fillColor="13956346" lineColor="51455">
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoE281VEe6-nsIERnFPvA" type="DiagramName"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoE3M1VEe6-nsIERnFPvA" type="Description"/>
+          <styles xmi:type="notation:TextStyle" xmi:id="_MkoE3c1VEe6-nsIERnFPvA"/>
+          <styles xmi:type="notation:LineTypeStyle" xmi:id="_MkoE3s1VEe6-nsIERnFPvA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkoE381VEe6-nsIERnFPvA" x="872" y="2142" width="14339" height="13386"/>
+        </children>
+      </contents>
+    </eAnnotations>
+    <eAnnotations xmi:id="_MkoE4M1VEe6-nsIERnFPvA" source="http://www.eclipse.org/emf/2002/Ecore"/>
+    <packageImport xmi:id="_MkoE4c1VEe6-nsIERnFPvA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_MkoE4s1VEe6-nsIERnFPvA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_ldmKwOMDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes?"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_MkoE481VEe6-nsIERnFPvA" name="CORBA Elements">
+      <eAnnotations xmi:id="_MkoE5M1VEe6-nsIERnFPvA" source="uml2.diagrams">
+        <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_MkoE5c1VEe6-nsIERnFPvA" type="Class" name="Corba Classes">
+          <children xmi:type="notation:Shape" xmi:id="_MkoE5s1VEe6-nsIERnFPvA" type="Note" fontHeight="8" description="TODO: &#xD;&#xA;1) Rename the component and the interface to something appropriate for your context. Renaming can be achieved using Find/Replace by right clicking on the selected elements in the project explorer or in this diagram.&#xD;&#xA;2) Alternately you can select the name in the diagram and change it.&#xD;&#xA;3) You can also choose to rename this diagram.&#xD;&#xA;4) You can delete this note when you no longer need it." fillColor="13956346" lineColor="12632258">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoE581VEe6-nsIERnFPvA" type="DiagramName"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoE6M1VEe6-nsIERnFPvA" type="Description"/>
+            <styles xmi:type="notation:TextStyle" xmi:id="_MkoE6c1VEe6-nsIERnFPvA"/>
+            <styles xmi:type="notation:LineTypeStyle" xmi:id="_MkoE6s1VEe6-nsIERnFPvA"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkoE681VEe6-nsIERnFPvA" x="1851" y="872" width="9525" height="3810"/>
+          </children>
+          <children xmi:type="umlnotation:UMLComponent" xmi:id="_MkoE7M1VEe6-nsIERnFPvA" element="_MkosLs1VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_MkoE7c1VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_MkoE7s1VEe6-nsIERnFPvA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoE781VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoE8M1VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoE8c1VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoE8s1VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoE881VEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoE9M1VEe6-nsIERnFPvA" visible="false" type="OperationCompartment"/>
+            <children xmi:type="notation:ListCompartment" xmi:id="_MkoE9c1VEe6-nsIERnFPvA" visible="false" type="RealizationListCompartment"/>
+            <children xmi:type="notation:ListCompartment" xmi:id="_MkoE9s1VEe6-nsIERnFPvA" type="RequiredInterfaceListCompartment"/>
+            <children xmi:type="notation:ListCompartment" xmi:id="_MkoE981VEe6-nsIERnFPvA" type="ProvidedInterfaceListCompartment"/>
+            <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_MkoE-M1VEe6-nsIERnFPvA" visible="false" type="StructureCompartment"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkoE-c1VEe6-nsIERnFPvA" x="1058" y="5820"/>
+          </children>
+          <children xmi:type="umlnotation:UMLClassifierShape" xmi:id="_MkoE-s1VEe6-nsIERnFPvA" element="_MkosL81VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label" useClassifierShape="true">
+            <children xmi:type="notation:DecorationNode" xmi:id="_MkoE-81VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_MkoE_M1VEe6-nsIERnFPvA" width="530" height="530"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoE_c1VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoE_s1VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoE_81VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFAM1VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFAc1VEe6-nsIERnFPvA" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFAs1VEe6-nsIERnFPvA" type="OperationCompartment"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkoFA81VEe6-nsIERnFPvA" x="7291" y="5706"/>
+          </children>
+        </contents>
+        <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_MkoFBM1VEe6-nsIERnFPvA" type="Class" name="Shortcuts to CORBA primitive types">
+          <children xmi:type="notation:Shape" xmi:id="_MkoFBc1VEe6-nsIERnFPvA" type="Note" fontHeight="8" description="This is a collection of shortcuts to CORBA primitive types which are contained in the imported CORBA Types library.&#xD;&#xA;To use these shortcuts copy the ones needed and then paste into the destination diagram.&#xD;&#xA;These could be useful, for example, while trying to model a &quot;typedef&quot; for a CORBA basic type.  This would be achieved by creating a UML Class with the new name, stereotyped as &lt;&lt;CORBATypedef>>, and then drawing a &quot;Substitution&quot; relationship from this UML Class to the existing UML Primitive type." fillColor="13956346" lineColor="12632258">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFBs1VEe6-nsIERnFPvA" type="DiagramName"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFB81VEe6-nsIERnFPvA" type="Description"/>
+            <styles xmi:type="notation:TextStyle" xmi:id="_MkoFCM1VEe6-nsIERnFPvA"/>
+            <styles xmi:type="notation:LineTypeStyle" xmi:id="_MkoFCc1VEe6-nsIERnFPvA"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkoFCs1VEe6-nsIERnFPvA" x="2853" y="317" width="13335" height="3810"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_MkoFC81VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_MkoFDM1VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_MkoFDc1VEe6-nsIERnFPvA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFDs1VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFD81VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFEM1VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFEc1VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFEs1VEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFE81VEe6-nsIERnFPvA" visible="false" type="OperationCompartment"/>
+            <element xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZCOMDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/any?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkoFFM1VEe6-nsIERnFPvA" x="2219" y="5072"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_MkoFFc1VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_MkoFFs1VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_MkoFF81VEe6-nsIERnFPvA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFGM1VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFGc1VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFGs1VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFG81VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFHM1VEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFHc1VEe6-nsIERnFPvA" visible="false" type="OperationCompartment"/>
+            <element xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZCeMDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/boolean?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkoFHs1VEe6-nsIERnFPvA" x="4755" y="5072"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_MkoFH81VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_MkoFIM1VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_MkoFIc1VEe6-nsIERnFPvA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFIs1VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFI81VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFJM1VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFJc1VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFJs1VEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFJ81VEe6-nsIERnFPvA" visible="false" type="OperationCompartment"/>
+            <element xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZDeMDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/char?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkoFKM1VEe6-nsIERnFPvA" x="7608" y="5072"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_MkoFKc1VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_MkoFKs1VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_MkoFK81VEe6-nsIERnFPvA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFLM1VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFLc1VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFLs1VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFL81VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFMM1VEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFMc1VEe6-nsIERnFPvA" visible="false" type="OperationCompartment"/>
+            <element xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZA-MDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/double?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkoFMs1VEe6-nsIERnFPvA" x="10461" y="5072"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_MkoFM81VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_MkoFNM1VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_MkoFNc1VEe6-nsIERnFPvA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFNs1VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFN81VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFOM1VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFOc1VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFOs1VEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFO81VEe6-nsIERnFPvA" visible="false" type="OperationCompartment"/>
+            <element xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZD-MDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/float?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkoFPM1VEe6-nsIERnFPvA" x="12997" y="5072"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_MkoFPc1VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_MkoFPs1VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_MkoFP81VEe6-nsIERnFPvA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFQM1VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFQc1VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFQs1VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFQ81VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFRM1VEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFRc1VEe6-nsIERnFPvA" visible="false" type="OperationCompartment"/>
+            <element xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZAOMDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/long?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkoFRs1VEe6-nsIERnFPvA" x="2219" y="6974"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_MkoFR81VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_MkoFSM1VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_MkoFSc1VEe6-nsIERnFPvA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFSs1VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFS81VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFTM1VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFTc1VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFTs1VEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFT81VEe6-nsIERnFPvA" visible="false" type="OperationCompartment"/>
+            <element xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZBOMDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/long%20double?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkoFUM1VEe6-nsIERnFPvA" x="5072" y="6974"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_MkoFUc1VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_MkoFUs1VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_MkoFU81VEe6-nsIERnFPvA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFVM1VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFVc1VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFVs1VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFV81VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFWM1VEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFWc1VEe6-nsIERnFPvA" visible="false" type="OperationCompartment"/>
+            <element xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZAuMDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/long%20long?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkoFWs1VEe6-nsIERnFPvA" x="8876" y="6974"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_MkoFW81VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_MkoFXM1VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_MkoFXc1VEe6-nsIERnFPvA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFXs1VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFX81VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFYM1VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFYc1VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFYs1VEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFY81VEe6-nsIERnFPvA" visible="false" type="OperationCompartment"/>
+            <element xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZEuMDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/Object?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkoFZM1VEe6-nsIERnFPvA" x="12046" y="6974"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_MkoFZc1VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_MkoFZs1VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_MkoFZ81VEe6-nsIERnFPvA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFaM1VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFac1VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFas1VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFa81VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFbM1VEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFbc1VEe6-nsIERnFPvA" visible="false" type="OperationCompartment"/>
+            <element xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZC-MDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/octet?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkoFbs1VEe6-nsIERnFPvA" x="2219" y="8876"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_MkoFb81VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_MkoFcM1VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_MkoFcc1VEe6-nsIERnFPvA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFcs1VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFc81VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFdM1VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkoFdc1VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFds1VEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkoFd81VEe6-nsIERnFPvA" visible="false" type="OperationCompartment"/>
+            <element xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZAeMDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/short?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkoFeM1VEe6-nsIERnFPvA" x="5072" y="8876"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_MkoFec1VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_MkoFes1VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_Mkor4M1VEe6-nsIERnFPvA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_Mkor4c1VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_Mkor4s1VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_Mkor481VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_Mkor5M1VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_Mkor5c1VEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_Mkor5s1VEe6-nsIERnFPvA" visible="false" type="OperationCompartment"/>
+            <element xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZCuMDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/string?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mkor581VEe6-nsIERnFPvA" x="7608" y="8876"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_Mkor6M1VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_Mkor6c1VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_Mkor6s1VEe6-nsIERnFPvA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_Mkor681VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_Mkor7M1VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_Mkor7c1VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_Mkor7s1VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_Mkor781VEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_Mkor8M1VEe6-nsIERnFPvA" visible="false" type="OperationCompartment"/>
+            <element xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZEeMDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/TypeCode?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mkor8c1VEe6-nsIERnFPvA" x="10144" y="8876"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_Mkor8s1VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_Mkor881VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_Mkor9M1VEe6-nsIERnFPvA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_Mkor9c1VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_Mkor9s1VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_Mkor981VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_Mkor-M1VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_Mkor-c1VEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_Mkor-s1VEe6-nsIERnFPvA" visible="false" type="OperationCompartment"/>
+            <element xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZBuMDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/unsigned%20long?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mkor-81VEe6-nsIERnFPvA" x="2219" y="10461"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_Mkor_M1VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_Mkor_c1VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_Mkor_s1VEe6-nsIERnFPvA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_Mkor_81VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkosAM1VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkosAc1VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkosAs1VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkosA81VEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkosBM1VEe6-nsIERnFPvA" visible="false" type="OperationCompartment"/>
+            <element xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZB-MDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/unsigned%20long%20long?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkosBc1VEe6-nsIERnFPvA" x="6340" y="10461"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_MkosBs1VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_MkosB81VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_MkosCM1VEe6-nsIERnFPvA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkosCc1VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkosCs1VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkosC81VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkosDM1VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkosDc1VEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkosDs1VEe6-nsIERnFPvA" visible="false" type="OperationCompartment"/>
+            <element xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZBeMDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/unsigned%20short?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkosD81VEe6-nsIERnFPvA" x="11095" y="10461"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_MkosEM1VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_MkosEc1VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_MkosEs1VEe6-nsIERnFPvA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkosE81VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkosFM1VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkosFc1VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkosFs1VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkosF81VEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkosGM1VEe6-nsIERnFPvA" visible="false" type="OperationCompartment"/>
+            <element xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZDOMDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/void?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkosGc1VEe6-nsIERnFPvA" x="13314" y="8876"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_MkosGs1VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_MkosG81VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_MkosHM1VEe6-nsIERnFPvA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkosHc1VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkosHs1VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkosH81VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkosIM1VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkosIc1VEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkosIs1VEe6-nsIERnFPvA" visible="false" type="OperationCompartment"/>
+            <element xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZDuMDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/wchar?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkosI81VEe6-nsIERnFPvA" x="14582" y="6974"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_MkosJM1VEe6-nsIERnFPvA" fontHeight="8" lineColor="14263149" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_MkosJc1VEe6-nsIERnFPvA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_MkosJs1VEe6-nsIERnFPvA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkosJ81VEe6-nsIERnFPvA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkosKM1VEe6-nsIERnFPvA" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkosKc1VEe6-nsIERnFPvA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_MkosKs1VEe6-nsIERnFPvA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkosK81VEe6-nsIERnFPvA" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_MkosLM1VEe6-nsIERnFPvA" visible="false" type="OperationCompartment"/>
+            <element xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZEOMDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/wstring?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkosLc1VEe6-nsIERnFPvA" x="15319" y="10476"/>
+          </children>
+        </contents>
+      </eAnnotations>
+      <packagedElement xmi:type="uml:Component" xmi:id="_MkosLs1VEe6-nsIERnFPvA" name="NamingAuthority">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_MkosL81VEe6-nsIERnFPvA" name="translation_library">
+          <ownedOperation xmi:id="_yKJwIM1fEe6-nsIERnFPvA" name="str_to_authority"/>
+          <ownedOperation xmi:id="_0oW38M1fEe6-nsIERnFPvA" name="authority_to_str"/>
+          <ownedOperation xmi:id="_4ZkfwM1fEe6-nsIERnFPvA" name="qualified_name_to_str">
+            <ownedParameter xmi:id="_AQbuUM1gEe6-nsIERnFPvA" name="Parameter1" direction="return"/>
+            <ownedParameter xmi:id="_Fdg3MM1gEe6-nsIERnFPvA" name="qualified_name">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZCuMDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/string?"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_XevA8M1gEe6-nsIERnFPvA" name="str_to_qualified_name">
+            <ownedParameter xmi:id="_dOeyAM1gEe6-nsIERnFPvA" name="Parameter1" direction="return"/>
+            <ownedParameter xmi:id="_e1t1kM1gEe6-nsIERnFPvA" name="qualified_name_str"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_zFZXwM1cEe6-nsIERnFPvA" name="AuthorityId">
+          <ownedAttribute xmi:id="_oPBOoM1dEe6-nsIERnFPvA" name="naming_entity" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZCuMDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/string?"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Nc-6EM1eEe6-nsIERnFPvA" name="authority" visibility="public" type="_lVNa0M1bEe6-nsIERnFPvA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_lepjUM1eEe6-nsIERnFPvA" name="QualifiedName">
+          <ownedAttribute xmi:id="__K_lsM1eEe6-nsIERnFPvA" name="athority_id" visibility="public" type="_zFZXwM1cEe6-nsIERnFPvA"/>
+          <ownedAttribute xmi:id="_Ovf1YM1fEe6-nsIERnFPvA" name="localname" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://CORBA_TYPE_LIBRARIES/CORBAPrimitiveTypes.emx#_sETZCuMDEdqWIo7Sg6ck7g?CORBAPrimitiveTypes/string?"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_lVNa0M1bEe6-nsIERnFPvA" name="RegistrationAuthority">
+        <ownedAttribute xmi:id="_GM8s4M1cEe6-nsIERnFPvA" name="DCE" visibility="private"/>
+        <ownedAttribute xmi:id="_W3XbwM1cEe6-nsIERnFPvA" name="ISO" visibility="private"/>
+        <ownedAttribute xmi:id="_W75WcM1cEe6-nsIERnFPvA" name="IDL" visibility="private"/>
+        <ownedAttribute xmi:id="_YSQFYM1cEe6-nsIERnFPvA" name="DNS" visibility="private"/>
+        <ownedAttribute xmi:id="_mpROQM1cEe6-nsIERnFPvA" name="OTHER" visibility="private"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_MkosMM1VEe6-nsIERnFPvA">
+      <eAnnotations xmi:id="_MkosMc1VEe6-nsIERnFPvA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_MkosMs1VEe6-nsIERnFPvA">
+      <eAnnotations xmi:id="_MkosM81VEe6-nsIERnFPvA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_MkosNM1VEe6-nsIERnFPvA">
+      <eAnnotations xmi:id="_MkosNc1VEe6-nsIERnFPvA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_4OVBUD0TEeKt-L0gyEptgQ?Deployment/Deployment?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_MkosNs1VEe6-nsIERnFPvA">
+      <eAnnotations xmi:id="_MkosN81VEe6-nsIERnFPvA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://CORBA_PROFILE/CorbaProfile.epx#_H2kfkA4DEeKRU4tYn-mkMQ?CORBA%20Transformation/CORBATransformation?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CORBA_PROFILE/CorbaProfile.epx#_0RP1EL02EdmtEfhX0kH0jg?CORBA%20Transformation?"/>
+    </profileApplication>
+  </uml:Model>
+  <CORBATransformation:component xmi:id="_MkosOM1VEe6-nsIERnFPvA" base_Component="_MkosLs1VEe6-nsIERnFPvA"/>
+  <CORBATransformation:interface xmi:id="_MkosOc1VEe6-nsIERnFPvA" base_Interface="_MkosL81VEe6-nsIERnFPvA"/>
+  <CORBATransformation:enumeration xmi:id="_lVXL0M1bEe6-nsIERnFPvA" base_Enumeration="_lVNa0M1bEe6-nsIERnFPvA"/>
+  <CORBATransformation:CORBAStruct xmi:id="_b3aYwM1dEe6-nsIERnFPvA" base_Class="_zFZXwM1cEe6-nsIERnFPvA"/>
+  <CORBATransformation:CORBAStruct xmi:id="_4wK3UM1eEe6-nsIERnFPvA" base_Class="_lepjUM1eEe6-nsIERnFPvA"/>
+</xmi:XMI>
