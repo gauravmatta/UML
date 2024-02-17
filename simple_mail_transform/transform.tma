@@ -3,20 +3,22 @@
 <com.ibm.xtools.jet.ui.internal:TransformModelRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.xtools.jet.ui.internal="com.ibm.xtools.jet.ui.internal.tma" xmlns:com.ibm.xtools.jet.ui.internal.tma="com.ibm.xtools.jet.ui.internal.tma.actions">
   <ActionsRoot>
     <actions xsi:type="com.ibm.xtools.jet.ui.internal.tma:ContainerTagAction" name="letter.html">
+      <exemplarReferences name="Gaurav" Exemplar="//@ExemplarsRoot/@exemplars.1/@children.4/@children.0/@children.0"/>
+      <exemplarReferences name="Manu" Exemplar="//@ExemplarsRoot/@exemplars.1/@children.4/@children.0/@children.1"/>
       <schemaElement href="input.ecore#//Mailing"/>
       <ContainerTag name="org.eclipse.jet.workspaceTags:file" libraryId="org.eclipse.jet.workspaceTags" content="">
         <attributes name="derived" value="" required="false" type="boolean"/>
         <attributes name="encoding" value="" required="false" type="string"/>
-        <attributes name="path" value="{$org.eclipse.jet.resource.project.name}/{$root/@mailingFolder}/{$mailing/@firstName}" required="true" type="string"/>
+        <attributes name="path" value="{$org.eclipse.jet.resource.project.name}/{$root/@mailingFolder}/{$campaign/@campaignMailFolder}/{$mailing/@htmlFileName}" required="true" type="string"/>
         <attributes name="replace" value="true" required="false" type="boolean"/>
         <attributes name="template" value="templates/mailing/letter.html.jet" required="true" type="string"/>
       </ContainerTag>
     </actions>
-    <actions xsi:type="com.ibm.xtools.jet.ui.internal.tma:ContainerTagAction" name="campaign project">
+    <actions xsi:type="com.ibm.xtools.jet.ui.internal.tma:ContainerTagAction" name="Campaign">
       <schemaElement href="input.ecore#//Campaign"/>
       <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:ContainerTagAction" name="letters">
         <schemaElement href="input.ecore#//Campaign"/>
-        <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:ContainerTagAction" name="Create File: letter.html">
+        <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:ContainerTagAction" name="Create File: index.html">
           <exemplarReferences name="letter.html" Exemplar="//@ExemplarsRoot/@exemplars.0/@children.8"/>
           <schemaElement href="input.ecore#//Campaign"/>
           <ContainerTag name="org.eclipse.jet.workspaceTags:file" libraryId="org.eclipse.jet.workspaceTags" content="">
@@ -24,16 +26,57 @@
             <attributes name="encoding" value="" required="false" type="string"/>
             <attributes name="path" value="letter.html" required="true" type="string"/>
             <attributes name="replace" value="true" required="false" type="boolean"/>
-            <attributes name="template" value="templates/campaign/letter.html.jet" required="true" type="string"/>
+            <attributes name="template" value="templates/campaign/index.html.jet" required="true" type="string"/>
           </ContainerTag>
         </children>
         <ContainerTag name="org.eclipse.jet.workspaceTags:folder" libraryId="org.eclipse.jet.workspaceTags" content="">
-          <attributes name="path" value="letters" required="true" type="string"/>
+          <attributes name="path" value="{$campaign/@lettersDir}" required="true" type="string"/>
+        </ContainerTag>
+      </children>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:ContainerTagAction" name=".project">
+        <schemaElement href="input.ecore#//Campaign"/>
+        <ContainerTag name="org.eclipse.jet.workspaceTags:file" libraryId="org.eclipse.jet.workspaceTags" content="">
+          <attributes name="derived" value="" required="false" type="boolean"/>
+          <attributes name="encoding" value="" required="false" type="string"/>
+          <attributes name="path" value=".project" required="true" type="string"/>
+          <attributes name="replace" value="true" required="false" type="boolean"/>
+          <attributes name="template" value="templates/campaign/project.jet" required="true" type="string"/>
+        </ContainerTag>
+      </children>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:ContainerTagAction" name="Master.css">
+        <schemaElement href="input.ecore#//Campaign"/>
+        <ContainerTag name="org.eclipse.jet.workspaceTags:file" libraryId="org.eclipse.jet.workspaceTags" content="">
+          <attributes name="derived" value="" required="false" type="boolean"/>
+          <attributes name="encoding" value="" required="false" type="string"/>
+          <attributes name="path" value="Master.css" required="true" type="string"/>
+          <attributes name="replace" value="true" required="false" type="boolean"/>
+          <attributes name="template" value="templates/campaign/Master.css.jet" required="true" type="string"/>
         </ContainerTag>
       </children>
       <ContainerTag name="org.eclipse.jet.workspaceTags:project" libraryId="org.eclipse.jet.workspaceTags" content="">
         <attributes name="location" value="" required="false" type="string"/>
-        <attributes name="name" value="campaign project" required="true" type="string"/>
+        <attributes name="name" value="{$campaign/@project}" required="true" type="string"/>
+      </ContainerTag>
+    </actions>
+    <actions xsi:type="com.ibm.xtools.jet.ui.internal.tma:ContainerTagAction" name="campaignMailFolder" replacable="true">
+      <schemaElement href="input.ecore#//Campaign"/>
+      <ContainerTag name="org.eclipse.jet.controlTags:set" libraryId="org.eclipse.jet.controlTags" content="{$campaign/@project}/{$campaign/@lettersDir}">
+        <attributes name="name" value="campaignMailFolder" required="true" type="string"/>
+        <attributes name="select" value="campaign" required="true" type="xpath"/>
+      </ContainerTag>
+    </actions>
+    <actions xsi:type="com.ibm.xtools.jet.ui.internal.tma:ContainerTagAction" name="lettersDir" replacable="true">
+      <schemaElement href="input.ecore#//Campaign"/>
+      <ContainerTag name="org.eclipse.jet.controlTags:set" libraryId="org.eclipse.jet.controlTags" content="letters">
+        <attributes name="name" value="lettersDir" required="true" type="string"/>
+        <attributes name="select" value="campaign" required="true" type="xpath"/>
+      </ContainerTag>
+    </actions>
+    <actions xsi:type="com.ibm.xtools.jet.ui.internal.tma:ContainerTagAction" name="htmlFileName" replacable="true">
+      <schemaElement href="input.ecore#//Mailing"/>
+      <ContainerTag name="org.eclipse.jet.controlTags:set" libraryId="org.eclipse.jet.controlTags" content="{$mailing/@email}">
+        <attributes name="name" value="htmlFileName" required="true" type="string"/>
+        <attributes name="select" value="mailing" required="true" type="xpath"/>
       </ContainerTag>
     </actions>
   </ActionsRoot>
@@ -96,6 +139,18 @@
       <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/test.xml"/>
       <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/simple.mail.transform/transform.tma"/>
     </exemplars>
+    <exemplars xsi:type="com.ibm.xtools.jet.ui.internal.tma:ProjectExemplar" path="/input.data">
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/input.data/.project"/>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/input.data/dump.xml"/>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/input.data/first-mailing.xml"/>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" path="/input.data/letter.html"/>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FolderExemplar" path="/input.data/output.data">
+        <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FolderExemplar" path="/input.data/output.data/mailing">
+          <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" ExemplarReference="//@ActionsRoot/@actions.0/@exemplarReferences.0" path="/input.data/output.data/mailing/Gaurav"/>
+          <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:FileExemplar" ExemplarReference="//@ActionsRoot/@actions.0/@exemplarReferences.1" path="/input.data/output.data/mailing/Manu"/>
+        </children>
+      </children>
+    </exemplars>
   </ExemplarsRoot>
   <rootSchemaElementType href="input.ecore#//Root"/>
   <ReplacePairRoot>
@@ -108,6 +163,22 @@
     <replacePairs findText="{$mailing/@email}">
       <replaceObject href="input.ecore#//Root/mailingFolder"/>
     </replacePairs>
+    <replacePairs findText="letters" replaceObject="//@ActionsRoot/@actions.3"/>
+    <replacePairs findText="{$root/@mailingFolder}" replaceObject="//@ActionsRoot/@actions.2"/>
+    <replacePairs findText="{$root/@mailingFolder}">
+      <replaceObject href="input.ecore#//Campaign/project"/>
+    </replacePairs>
+    <replacePairs findText="jdoe@example.org.html" replaceObject="//@ActionsRoot/@actions.4"/>
+    <replacePairs findText="{$mailing/@firstName}" replaceObject="//@ActionsRoot/@actions.4"/>
+    <replacePairs findText="email">
+      <replaceObject href="input.ecore#//Mailing/email"/>
+    </replacePairs>
+    <replacePairs findText="name">
+      <replaceObject href="input.ecore#//Mailing/firstName"/>
+    </replacePairs>
+    <replacePairs findText="fds" replaceObject="//@ActionsRoot/@actions.4"/>
+    <replacePairs findText="Joe Doe"/>
+    <replacePairs findText="fdsfds"/>
   </ReplacePairRoot>
   <SchemaTypeVarRoot>
     <SchemaTypeVars var="root">
@@ -118,6 +189,9 @@
     </SchemaTypeVars>
     <SchemaTypeVars var="campaign">
       <type href="input.ecore#//Campaign"/>
+    </SchemaTypeVars>
+    <SchemaTypeVars var="interest">
+      <type href="input.ecore#//Interest"/>
     </SchemaTypeVars>
   </SchemaTypeVarRoot>
 </com.ibm.xtools.jet.ui.internal:TransformModelRoot>

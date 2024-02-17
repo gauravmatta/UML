@@ -2,13 +2,26 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<xsd:complexType name="Root">
 		<xsd:sequence>
-			<xsd:element name="mailing" type="Mailing" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+			<xsd:element name="campaign" type="Campaign" minOccurs="0" maxOccurs="unbounded"></xsd:element>
 		</xsd:sequence>
 		<xsd:attribute name="mailingFolder" type="xsd:string" ></xsd:attribute>
 	</xsd:complexType>
+	<xsd:complexType name="Campaign">
+		<xsd:sequence>
+			<xsd:element name="mailing" type="Mailing" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="project" type="xsd:string" use="required"></xsd:attribute>
+	</xsd:complexType>
 	<xsd:complexType name="Mailing">
+		<xsd:sequence>
+			<xsd:element name="interest" type="Interest" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+		</xsd:sequence>
 		<xsd:attribute name="email" type="xsd:string" ></xsd:attribute>
 		<xsd:attribute name="firstName" type="xsd:string" ></xsd:attribute>
+		<xsd:attribute name="lastName" type="xsd:string" use="required"></xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="Interest">
+		<xsd:attribute name="code" type="xsd:string" use="required"></xsd:attribute>
 	</xsd:complexType>
 
 	<xsd:element name="root" type="Root"></xsd:element>

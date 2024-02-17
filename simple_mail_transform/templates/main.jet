@@ -44,11 +44,34 @@
 <%-- begin custom variables for $root (1) --%>
 <%-- end custom variables for $root (1) --%>
 
-<c:iterate select="$root/mailing" var="mailing">
-  <%-- derived attributes for $mailing --%>
-  <%-- begin custom variables for $mailing (1) --%>
-  <%-- end custom variables for $mailing (1) --%>
+<c:iterate select="$root/campaign" var="campaign">
+  <%-- derived attributes for $campaign --%>
+  <%-- begin custom variables for $campaign (1) --%>
+  <%-- end custom variables for $campaign (1) --%>
 
+  <c:set select="$campaign" name="campaignMailFolder"><%--@generated--%><c:get select="$campaign/@project"/>/<c:get select="$campaign/@lettersDir"/></c:set>
+  <c:set select="$campaign" name="lettersDir"><%--@generated--%>letters</c:set>
+  <%-- begin custom variables for $campaign (2) --%>
+  <%-- end custom variables for $campaign (2) --%>
+  <c:iterate select="$campaign/mailing" var="mailing">
+    <%-- derived attributes for $mailing --%>
+    <%-- begin custom variables for $mailing (1) --%>
+    <%-- end custom variables for $mailing (1) --%>
+
+    <c:set select="$mailing" name="htmlFileName"><%--@generated--%><c:get select="$mailing/@email"/></c:set>
+    <%-- begin custom variables for $mailing (2) --%>
+    <%-- end custom variables for $mailing (2) --%>
+    <c:iterate select="$mailing/interest" var="interest">
+      <%-- derived attributes for $interest --%>
+      <%-- begin custom variables for $interest (1) --%>
+      <%-- end custom variables for $interest (1) --%>
+
+    </c:iterate>
+    <%-- begin custom variables for $mailing (3) --%>
+    <%-- end custom variables for $mailing (3) --%>
+  </c:iterate>
+  <%-- begin custom variables for $campaign (3) --%>
+  <%-- end custom variables for $campaign (3) --%>
 </c:iterate>
 <%-- begin custom variables for $root (3) --%>
 <%-- end custom variables for $root (3) --%>
@@ -69,15 +92,43 @@
 <%-- Begin: custom actions for $root (1) --%>
 <%-- End: custom actions for $root (1) --%>
 
-<c:iterate select="$root/mailing" var="mailing">
-  <%-- actions for $mailing --%>
-  <%-- Begin: custom actions for $mailing (1) --%>
-  <%-- End: custom actions for $mailing (1) --%>
+<c:iterate select="$root/campaign" var="campaign">
+  <%-- actions for $campaign --%>
+  <%-- Begin: custom actions for $campaign (1) --%>
+  <%-- End: custom actions for $campaign (1) --%>
 
-  <ws:file path="{$org.eclipse.jet.resource.project.name}/{$root/@mailingFolder}/{$mailing/@firstName}" replace="true" template="templates/mailing/letter.html.jet"/>
+  <ws:project name="{$campaign/@project}">
+    <ws:folder path="{$campaign/@lettersDir}">
+      <ws:file path="letter.html" replace="true" template="templates/campaign/index.html.jet"/>
+    </ws:folder>
+    <ws:file path=".project" replace="true" template="templates/campaign/project.jet"/>
+    <ws:file path="Master.css" replace="true" template="templates/campaign/Master.css.jet"/>
+  </ws:project>
 
-  <%-- Begin: custom actions for $mailing (2) --%>
-  <%-- End: custom actions for $mailing (2) --%>
+  <%-- Begin: custom actions for $campaign (2) --%>
+  <%-- End: custom actions for $campaign (2) --%>
+  <c:iterate select="$campaign/mailing" var="mailing">
+    <%-- actions for $mailing --%>
+    <%-- Begin: custom actions for $mailing (1) --%>
+    <%-- End: custom actions for $mailing (1) --%>
+
+    <ws:file path="{$org.eclipse.jet.resource.project.name}/{$root/@mailingFolder}/{$campaign/@campaignMailFolder}/{$mailing/@htmlFileName}" replace="true" template="templates/mailing/letter.html.jet"/>
+
+    <%-- Begin: custom actions for $mailing (2) --%>
+    <%-- End: custom actions for $mailing (2) --%>
+    <c:iterate select="$mailing/interest" var="interest">
+      <%-- actions for $interest --%>
+      <%-- Begin: custom actions for $interest (1) --%>
+      <%-- End: custom actions for $interest (1) --%>
+
+    </c:iterate>
+
+    <%-- Begin: custom actions for $mailing (3) --%>
+    <%-- End: custom actions for $mailing (3) --%>
+  </c:iterate>
+
+  <%-- Begin: custom actions for $campaign (3) --%>
+  <%-- End: custom actions for $campaign (3) --%>
 </c:iterate>
 
 <%-- Begin: custom actions for $root (3) --%>
