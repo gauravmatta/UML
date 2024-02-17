@@ -1,0 +1,4 @@
+<root mailingFolder="output.data/mailing">
+	<mailing email="gaurav.matta.tech@gmail.com" firstName="Gaurav"/>
+	<mailing email="gaurav.matta.tech@gmail.com" firstName="Manu"/>
+</root>
