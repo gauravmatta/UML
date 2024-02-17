@@ -12,6 +12,29 @@
         <attributes name="template" value="templates/mailing/letter.html.jet" required="true" type="string"/>
       </ContainerTag>
     </actions>
+    <actions xsi:type="com.ibm.xtools.jet.ui.internal.tma:ContainerTagAction" name="campaign project">
+      <schemaElement href="input.ecore#//Campaign"/>
+      <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:ContainerTagAction" name="letters">
+        <schemaElement href="input.ecore#//Campaign"/>
+        <children xsi:type="com.ibm.xtools.jet.ui.internal.tma:ContainerTagAction" name="letter.html">
+          <schemaElement href="input.ecore#//Campaign"/>
+          <ContainerTag name="org.eclipse.jet.workspaceTags:file" libraryId="org.eclipse.jet.workspaceTags" content="">
+            <attributes name="derived" value="" required="false" type="boolean"/>
+            <attributes name="encoding" value="" required="false" type="string"/>
+            <attributes name="path" value="letter.html" required="true" type="string"/>
+            <attributes name="replace" value="true" required="false" type="boolean"/>
+            <attributes name="template" value="templates/campaign/letter.html.jet" required="true" type="string"/>
+          </ContainerTag>
+        </children>
+        <ContainerTag name="org.eclipse.jet.workspaceTags:folder" libraryId="org.eclipse.jet.workspaceTags" content="">
+          <attributes name="path" value="letters" required="true" type="string"/>
+        </ContainerTag>
+      </children>
+      <ContainerTag name="org.eclipse.jet.workspaceTags:project" libraryId="org.eclipse.jet.workspaceTags" content="">
+        <attributes name="location" value="" required="false" type="string"/>
+        <attributes name="name" value="campaign project" required="true" type="string"/>
+      </ContainerTag>
+    </actions>
   </ActionsRoot>
   <ExemplarsRoot/>
   <rootSchemaElementType href="input.ecore#//Root"/>
@@ -32,6 +55,9 @@
     </SchemaTypeVars>
     <SchemaTypeVars var="mailing">
       <type href="input.ecore#//Mailing"/>
+    </SchemaTypeVars>
+    <SchemaTypeVars var="campaign">
+      <type href="input.ecore#//Campaign"/>
     </SchemaTypeVars>
   </SchemaTypeVarRoot>
 </com.ibm.xtools.jet.ui.internal:TransformModelRoot>
