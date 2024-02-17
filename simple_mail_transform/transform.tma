@@ -19,6 +19,9 @@
     <replacePairs findText="{$org.eclipse.jet.resource.project.name}/letter.html">
       <replaceObject href="input.ecore#//Mailing/email"/>
     </replacePairs>
+    <replacePairs findText="User">
+      <replaceObject href="input.ecore#//Mailing/firstName"/>
+    </replacePairs>
   </ReplacePairRoot>
   <SchemaTypeVarRoot>
     <SchemaTypeVars var="root">
