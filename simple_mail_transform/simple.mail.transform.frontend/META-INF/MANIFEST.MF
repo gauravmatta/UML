@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Simple Mail Transform Transformation
+Bundle-SymbolicName: simple.mail.transform.frontend; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: simple.mail.transform.frontend.Activator
+Bundle-Vendor: MAIL
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.emf.ecore,
+ org.eclipse.gmf.runtime.common.core,
+ org.eclipse.uml2.uml,
+ simple.mail.transform.model,
+ com.ibm.xtools.transform.authoring.uml2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy

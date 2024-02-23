@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.gmf.runtime.emf.core.Pathmaps">
+      <pathmap
+            name="SIMPLEMAILTRANSFORMPROFILE"
+            plugin="simple.mail.transform.profile"
+            path="profiles">
+      </pathmap>
+   </extension>
+   <extension
+         point="com.ibm.xtools.uml.msl.UMLProfiles">
+      <UMLProfile
+            name="Simple Mail Transform Profile"
+            path="pathmap://SIMPLEMAILTRANSFORMPROFILE/SimpleMailTransformProfile.epx"
+            visible="true"
+            required="false"
+            id="simple.mail.transform.profile.SimpleMailTransformProfile">
+      </UMLProfile>
+   </extension>
+
+</plugin>

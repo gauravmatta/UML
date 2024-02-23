@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     Synchronize Genmodel    
+     Synchronize genmodel with original JET generated ECORE file
+     ====================================================================== -->
+<project name="Synchronize" default="sync">
+    <description>
+            Synchronize genmodel with original JET generated ECORE file
+    </description>
+	
+	<property name="ecore.model.wspath" value="simple.mail.transform/input.ecore"/>
+	<property name="genmodel.project.path" value="model/input.genmodel"/>
+
+    <!-- ================================= 
+          target: sync              
+         ================================= -->
+    <target name="sync" description="Synchronize genmodel with original JET generated ECORE file">
+    	<echo>Synchronizing Model API with source model ${ecore.model.wspath}</echo>
+    	<eclipse.convertPath resourcepath="${ecore.model.wspath}" 
+    			property="ecore.model.location"/>
+        <emf.Ecore2Java 
+        	genmodel="${genmodel.project.path}"
+        	reconcilegenmodel="reload"
+        	generatejavacode="true"
+        	generatemodelproject="true">
+        	<model file="${ecore.model.location}"/>
+        </emf.Ecore2Java>
+    </target>
+
+</project>

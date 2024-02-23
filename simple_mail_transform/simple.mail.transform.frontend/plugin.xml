@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         point="com.ibm.xtools.transform.core.transformationProviders">
+      <TransformationProvider
+            class="simple.mail.transform.frontend.FrontendTransformationProvider">
+         <Priority
+               name="Highest">
+         </Priority>
+         <Transformation
+               transformGUI="simple.mail.transform.frontend.FrontendTransformationGUI"
+               version="1.0.0"
+               supportsSilentMode="true"
+               name="%Transform.name"
+               groupPath="%Transform.groupPath"
+               sourceModelType="Resource"
+               targetModelType="Raw"
+               id="simple.mail.transform.frontend.FrontendTransformation">
+            <Property
+                  readonly="false"
+                  metatype="choice"
+                  name="%MergeOption"
+                  metatypeData="%MergeOptionValues"
+                  value="3"
+                  id="MergeKind">
+            </Property>
+            <Property
+                  readonly="false"
+                  metatype="boolean"
+                  name="%MergeWarning"
+                  value="%MergeWarningDefault"
+                  id="MergeWarning">
+            </Property>
+         </Transformation>
+      </TransformationProvider>
+   </extension>
+
+</plugin>

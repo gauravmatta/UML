@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="simple.mail.transform"
+      label="Simple Mail Transform"
+      version="1.0.0.qualifier"
+      provider-name="MAIL">
+
+
+   <plugin
+         id="simple.mail.transform.frontend"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+ 
+   <plugin
+         id="simple.mail.transform"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="simple.mail.transform.model"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+ 
+   <plugin
+         id="simple.mail.transform.profile"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+ 
+</feature>

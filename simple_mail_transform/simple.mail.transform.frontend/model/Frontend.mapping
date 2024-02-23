@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<mappingRoot xmlns="http://www.ibm.com/2006/ccl/Mapping" xmlns:map="http://simple.mail.transform.frontend.Frontend/1.0.0" domainID="com.ibm.xtools.transform.authoring.mapping.ecore2ecore" targetNamespace="http://simple.mail.transform.frontend.Frontend/1.0.0">
+    <input path="/plugin/org.eclipse.uml2.uml/model/UML.ecore" var="src"/>
+    <input path="/resource/simple.mail.transform.profile/profiles/SimpleMailTransformProfile.epx" var="src2"/>
+    <output path="/resource/simple.mail.transform.model/model/input.ecore" var="tgt"/>
+</mappingRoot>
